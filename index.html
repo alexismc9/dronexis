@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dronexis — Filmagem Aérea Profissional</title>
+  <meta name="description" content="Dronexis: filmagem aérea profissional com drones. Eventos, imóveis, videoclipes, publicidade e muito mais." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="logo-inline.svg" alt="Dronexis" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato" class="nav-cta">Solicitar orçamento</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Solicitar orçamento</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <video class="hero-video active" id="vid1" muted playsinline preload="auto">
+      <source src="river.mp4" type="video/mp4">
+    </video>
+    <video class="hero-video" id="vid2" muted playsinline preload="auto">
+      <source src="beach.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Elevando sua visão<br/>
+        ao <span class="gradient-text">próximo nível</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="services" id="servicos">
+    <canvas id="particles"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">O que fazemos</span>
+        <h2 class="section-title">Serviços <span class="gradient-text">especializados</span></h2>
+        <p class="section-sub">Do planejamento à entrega final, cuidamos de cada detalhe para garantir filmagens extraordinárias.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 42V22l16-12 16 12v20H8z" stroke="#00d4ff" stroke-width="2" stroke-linejoin="round"/><path d="M18 42V30h12v12" stroke="#00d4ff" stroke-width="1.5"/><path d="M20 22h8v8h-8z" stroke="#00d4ff" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Imobiliário & Lançamentos</h3>
+          <p>Tours aéreos cinematográficos que valorizam imóveis, lançamentos e empreendimentos. Aumente o valor percebido e acelere as vendas.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="26" rx="3" stroke="#00d4ff" stroke-width="2"/><path d="M6 30L18 20l8 6 6-8 10 12" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 42h16" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/><path d="M24 36v6" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Publicidade & Marketing</h3>
+          <p>Conteúdo aéreo de alto impacto para campanhas, redes sociais e marcas que precisam se destacar da concorrência.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 6L6 18v24h36V18L24 6z" stroke="#00d4ff" stroke-width="2" stroke-linejoin="round"/><rect x="18" y="28" width="12" height="14" stroke="#00d4ff" stroke-width="1.5"/><circle cx="24" cy="22" r="4" stroke="#00d4ff" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Eventos & Cerimônias</h3>
+          <p>Casamentos, formaturas, shows e celebrações. Registramos cada momento especial de uma perspectiva única e inesquecível.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="24" width="36" height="16" rx="2" stroke="#00d4ff" stroke-width="2"/><path d="M14 24v-6h20v6" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round"/><path d="M6 32h36" stroke="#00d4ff" stroke-width="1.5"/><circle cx="16" cy="28" r="2" fill="#00d4ff"/><circle cx="32" cy="28" r="2" fill="#00d4ff"/></svg>
+          </div>
+          <h3>Hotelaria & Turismo</h3>
+          <p>Imagens aéreas que revelam a beleza de hotéis, resorts e destinos turísticos. Conteúdo que converte visitantes em hóspedes.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="12" width="28" height="28" rx="2" stroke="#00d4ff" stroke-width="2"/><path d="M10 20h28M10 28h28M18 12v28M26 12v28" stroke="#00d4ff" stroke-width="1.5"/><path d="M18 6h12" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/><path d="M24 6v6" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Arquitetura & Urbanismo</h3>
+          <p>Documentação aérea de projetos arquitetônicos, obras concluídas e desenvolvimentos urbanos para escritórios e incorporadoras.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M6 38h36M14 38V20h20v18" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 20h28M24 10v10" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round"/><path d="M8 10h32" stroke="#00d4ff" stroke-width="2" stroke-linecap="round"/><rect x="20" y="26" width="8" height="8" stroke="#00d4ff" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Monitoramento de Obras</h3>
+          <p>Acompanhamento aéreo periódico de canteiros de obras. Registro de progresso, inspeção de estruturas e relatórios visuais para gestores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nosso trabalho</span>
+        <h2 class="section-title">Portfólio em <span class="gradient-text">destaque</span></h2>
+        <p class="section-sub">Uma seleção dos nossos melhores projetos.</p>
+      </div>
+      <!-- <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="evento">Eventos</button>
+        <button class="filter-btn" data-filter="imovel">Imóveis</button>
+      </div> -->
+      <div class="portfolio-grid" id="portfolioGrid">
+        <p class="portfolio-loading">Carregando vídeos…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-glow"></div>
+    <div class="container">
+      <div class="cta-content">
+        <h2>Pronto para voar mais alto?</h2>
+        <p>Conte-nos sobre seu projeto e receba um orçamento personalizado em até 24 horas.</p>
+        <a href="#contato" class="btn btn-primary btn-lg">Solicitar orçamento gratuito</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="contact-hero">
+        <span class="section-tag">Fale conosco</span>
+        <h2 class="section-title">Vamos criar algo <span class="gradient-text">incrível</span> juntos?</h2>
+        <p class="contact-sub">Mande uma mensagem no WhatsApp e receba um orçamento rápido e sem compromisso.</p>
+        <div class="contact-channels">
+          <a href="https://wa.me/5521988525909" class="channel" target="_blank" rel="noopener">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#00d4ff"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.303A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a7.946 7.946 0 01-4.073-1.117l-.292-.174-3.035.795.809-2.953-.19-.303A7.944 7.944 0 014 12c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z" fill="#00d4ff"/></svg>
+            </div>
+            <div>
+              <span class="channel-label">WhatsApp</span>
+              <span class="channel-value">(21) 98852-5909</span>
+            </div>
+          </a>
+          <a href="mailto:dronexisfpv@gmail.com" class="channel" target="_blank" rel="noopener">
+            <div class="channel-icon">
+              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2" stroke="#00d4ff" stroke-width="1.5"/><path d="M2 7l10 7 10-7" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <span class="channel-label">E-mail</span>
+              <span class="channel-value">dronexisfpv@gmail.com</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="logo-inline.svg" alt="Dronexis" class="logo-img">
+        <p>Filmagem aérea profissional com drones de última geração. Sua visão, nossas asas.</p>
+        <div class="social-links">
+          <a href="https://instagram.com/dronexisfpv" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@dronexisfpv" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><rect x="2" y="4" width="20" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M10 9l5 3-5 3V9z" fill="currentColor"/></svg>
+          </a>
+          <a href="https://wa.me/5521988525909" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.5 9.5c.5 1 1.5 2.5 3 3.5 1 .7 2 1 3 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8 8l1 1M15 15l1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <a href="mailto:dronexisfpv@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span>© <span id="copyright-year"></span> Dronexis</span>
+          <span>Todos os direitos reservados</span>
+          <span>CNPJ: 45.742.273/0001-40</span>
+          <span>Piloto certificado ANAC</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
