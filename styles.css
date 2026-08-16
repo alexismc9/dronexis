@@ -153,6 +153,8 @@ section { padding: 100px 0; }
   height: 36px;
   width: auto;
   display: block;
+  transform: scale(0.8);
+  transform-origin: left center;
 }
 
 .nav-links {
